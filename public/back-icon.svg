@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.13 70.13">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #474745;
+      }
+    </style>
+  </defs>
+  <g id="Reader">
+    <g>
+      <circle class="cls-1" cx="35.07" cy="35.07" r="34.57"/>
+      <polygon class="cls-2" points="27.16 35.07 40.65 48.56 38.56 50.65 22.98 35.07 38.56 19.49 40.65 21.58 27.16 35.07"/>
+    </g>
+  </g>
+</svg>
