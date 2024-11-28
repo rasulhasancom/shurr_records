@@ -26,17 +26,20 @@ export const Player: React.FC<PlayerProps> = ({
   const vinylRef = useRef<HTMLImageElement>(null);
   const tonearmRef = useRef<HTMLImageElement>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
-  const vinylNoiseRef = useRef<HTMLAudioElement>(null);
+  const vinylNoiseRef = useRef<HTMLAudioElement | null>(null);  // Changed this line
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolume] = useState(0.5);
   const [isMuted, setIsMuted] = useState(false);
   const [previousVolume, setPreviousVolume] = useState(0.5);
 
+  // Initialize audio elements
   useEffect(() => {
-    vinylNoiseRef.current = new Audio('/vinyl-crackle.mp3');
-    vinylNoiseRef.current.loop = true;
-    vinylNoiseRef.current.volume = 0.05;
+    // Changed this block
+    const vinylNoise = new Audio('/vinyl-crackle.mp3');
+    vinylNoise.loop = true;
+    vinylNoise.volume = 0.05;
+    vinylNoiseRef.current = vinylNoise;
   }, []);
 
   useEffect(() => {
